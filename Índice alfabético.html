@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice Alfabético Completo: XHTML y CSS</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+        header { text-align: center; border-bottom: 3px solid #2c3e50; margin-bottom: 20px; padding-bottom: 10px; }
+        h1 { margin: 0; color: #2c3e50; }
+        
+        /* Navegación Alfabética */
+        .nav-index { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 30px; position: sticky; top: 0; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+        .nav-index a { text-decoration: none; color: #2980b9; font-weight: bold; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 50%; transition: 0.3s; }
+        .nav-index a:hover { background: #2980b9; color: white; transform: scale(1.1); }
+
+        /* Contenedor de Columnas */
+        .glossary { column-count: 3; column-gap: 40px; column-rule: 1px solid #ccc; max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 1000px) { .glossary { column-count: 2; } }
+        @media (max-width: 600px) { .glossary { column-count: 1; } }
+
+        .letter-group { break-inside: avoid; margin-bottom: 30px; }
+        .letter-group h2 { background: #2c3e50; color: white; padding: 5px 15px; border-radius: 4px; margin-top: 0; display: inline-block; width: 100%; box-sizing: border-box; }
+        
+        .item { margin-bottom: 15px; padding-bottom: 8px; border-bottom: 1px dotted #999; }
+        .term { font-weight: bold; color: #d35400; font-size: 1.05em; display: block; }
+        .desc { font-size: 0.9em; color: #555; display: block; margin: 4px 0; }
+        .page-link { font-size: 0.85em; color: #2980b9; text-decoration: none; font-weight: bold; }
+        .page-link:hover { text-decoration: underline; }
+        
+        code { background: #eee; padding: 2px 4px; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 1em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Índice de Conceptos XHTML y CSS</h1>
+    <p>Referencia Completa del Manual (95 Conceptos)</p>
+</header>
+
+<nav class="nav-index">
+    <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a>
+    <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#L">L</a>
+    <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#R">R</a>
+    <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#X">X</a>
+</nav>
+
+<div class="glossary">
+
+    <section class="letter-group" id="A">
+        <h2>A</h2>
+        <div class="item">
+            <span class="term"><code>&lt;a&gt;</code></span>
+            <span class="desc">Etiqueta utilizada para crear enlaces o anclas.</span>
+            <a href="XHTML+CSS.pdf#page=55" class="page-link">Ver página 55</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;abbr&gt;</code></span>
+            <span class="desc">Etiqueta para marcar abreviaturas.</span>
+            <a href="XHTML+CSS.pdf#page=32" class="page-link">Ver página 32</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;acronym&gt;</code></span>
+            <span class="desc">Etiqueta para marcar siglas o acrónimos.</span>
+            <a href="XHTML+CSS.pdf#page=32" class="page-link">Ver página 32</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>accesskey</code></span>
+            <span class="desc">Atributo que establece una tecla de acceso rápido a un elemento.</span>
+            <a href="XHTML+CSS.pdf#page=20" class="page-link">Ver página 20</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>action</code></span>
+            <span class="desc">Atributo de <code>&lt;form&gt;</code> que indica la URL encargada de procesar los datos.</span>
+            <a href="XHTML+CSS.pdf#page=100" class="page-link">Ver página 100</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>alt</code></span>
+            <span class="desc">Atributo obligatorio en imágenes para proporcionar una descripción textual alternativa.</span>
+            <a href="XHTML+CSS.pdf#page=73" class="page-link">Ver página 73</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;area&gt;</code></span>
+            <span class="desc">Etiqueta para definir las zonas interactivas en un mapa de imagen.</span>
+            <a href="XHTML+CSS.pdf#page=18" class="page-link">Ver página 18</a>
+        </div>
+        <div class="item">
+            <span class="term">Atributos básicos</span>
+            <span class="desc">Grupo de atributos comunes que incluye id, class, style y title.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="B">
+        <h2>B</h2>
+        <div class="item">
+            <span class="term"><code>&lt;body&gt;</code></span>
+            <span class="desc">Etiqueta que delimita el cuerpo del documento, conteniendo todo lo que el usuario ve.</span>
+            <a href="XHTML+CSS.pdf#page=18" class="page-link">Ver página 18</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;blockquote&gt;</code></span>
+            <span class="desc">Etiqueta de bloque utilizada para incluir citas textuales externas.</span>
+            <a href="XHTML+CSS.pdf#page=35" class="page-link">Ver página 35</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;br/&gt;</code></span>
+            <span class="desc">Etiqueta vacía que fuerza un salto de línea.</span>
+            <a href="XHTML+CSS.pdf#page=37" class="page-link">Ver página 37</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="C">
+        <h2>C</h2>
+        <div class="item">
+            <span class="term"><code>&lt;caption&gt;</code></span>
+            <span class="desc">Etiqueta para establecer la leyenda o título de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=86" class="page-link">Ver página 86</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>charset</code></span>
+            <span class="desc">Atributo que indica la codificación de caracteres de un recurso enlazado.</span>
+            <a href="XHTML+CSS.pdf#page=61" class="page-link">Ver página 61</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>checked</code></span>
+            <span class="desc">Atributo para indicar que un control checkbox o radio aparece preseleccionado.</span>
+            <a href="XHTML+CSS.pdf#page=104" class="page-link">Ver página 104</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>class</code></span>
+            <span class="desc">Atributo básico para aplicar clases de estilos CSS a un elemento.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;code&gt;</code></span>
+            <span class="desc">Etiqueta para delimitar fragmentos de código fuente.</span>
+            <a href="XHTML+CSS.pdf#page=33" class="page-link">Ver página 33</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;col&gt;</code></span>
+            <span class="desc">Etiqueta para asignar atributos comunes a columnas de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=97" class="page-link">Ver página 97</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;colgroup&gt;</code></span>
+            <span class="desc">Etiqueta para agrupar estructuralmente columnas de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=98" class="page-link">Ver página 98</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>cols</code></span>
+            <span class="desc">Atributo de <code>&lt;textarea&gt;</code> que define el número de caracteres visibles por fila.</span>
+            <a href="XHTML+CSS.pdf#page=112" class="page-link">Ver página 112</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>colspan</code></span>
+            <span class="desc">Atributo de celda para expandirse sobre varias columnas.</span>
+            <a href="XHTML+CSS.pdf#page=88" class="page-link">Ver página 88</a>
+        </div>
+        <div class="item">
+            <span class="term">Comentarios</span>
+            <span class="desc">Sintaxis <code>&lt;!-- --&gt;</code> para añadir notas que no se muestran en el navegador.</span>
+            <a href="XHTML+CSS.pdf#page=127" class="page-link">Ver página 127</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="D">
+        <h2>D</h2>
+        <div class="item">
+            <span class="term"><code>&lt;dd&gt;</code></span>
+            <span class="desc">Etiqueta para la descripción de un término en una lista de definición.</span>
+            <a href="XHTML+CSS.pdf#page=70" class="page-link">Ver página 70</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;del&gt;</code></span>
+            <span class="desc">Etiqueta para marcar texto eliminado o borrado.</span>
+            <a href="XHTML+CSS.pdf#page=29" class="page-link">Ver página 29</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;dfn&gt;</code></span>
+            <span class="desc">Etiqueta para marcar la definición de un término.</span>
+            <a href="XHTML+CSS.pdf#page=33" class="page-link">Ver página 33</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>dir</code></span>
+            <span class="desc">Atributo que indica la dirección del texto (ltr o rtl).</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>disabled</code></span>
+            <span class="desc">Atributo para deshabilitar un control de formulario.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;div&gt;</code></span>
+            <span class="desc">Etiqueta de bloque utilizada para agrupar elementos y crear divisiones.</span>
+            <a href="XHTML+CSS.pdf#page=119" class="page-link">Ver página 119</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;dl&gt;</code></span>
+            <span class="desc">Etiqueta para definir listas de definición.</span>
+            <a href="XHTML+CSS.pdf#page=70" class="page-link">Ver página 70</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;dt&gt;</code></span>
+            <span class="desc">Etiqueta para el término que se va a definir en una lista.</span>
+            <a href="XHTML+CSS.pdf#page=70" class="page-link">Ver página 70</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>DOCTYPE</code></span>
+            <span class="desc">Declaración necesaria al inicio del documento que indica el DTD utilizado.</span>
+            <a href="XHTML+CSS.pdf#page=125" class="page-link">Ver página 125</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="E">
+        <h2>E</h2>
+        <div class="item">
+            <span class="term"><code>&lt;em&gt;</code></span>
+            <span class="desc">Etiqueta de énfasis que realza el texto (generalmente en cursiva).</span>
+            <a href="XHTML+CSS.pdf#page=26" class="page-link">Ver página 26</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;embed&gt;</code></span>
+            <span class="desc">Etiqueta para embeber objetos externos (no estándar XHTML).</span>
+            <a href="XHTML+CSS.pdf#page=80" class="page-link">Ver página 80</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>enctype</code></span>
+            <span class="desc">Atributo de formulario que especifica la codificación al enviar archivos.</span>
+            <a href="XHTML+CSS.pdf#page=93" class="page-link">Ver página 93</a>
+        </div>
+        <div class="item">
+            <span class="term">Entidades HTML</span>
+            <span class="desc">Expresiones como &amp;nbsp; para representar caracteres especiales.</span>
+            <a href="XHTML+CSS.pdf#page=45" class="page-link">Ver página 45</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="F">
+        <h2>F</h2>
+        <div class="item">
+            <span class="term"><code>&lt;fieldset&gt;</code></span>
+            <span class="desc">Agrupa de forma lógica varios campos de un formulario.</span>
+            <a href="XHTML+CSS.pdf#page=108" class="page-link">Ver página 108</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;form&gt;</code></span>
+            <span class="desc">Etiqueta principal que encierra todos los controles de un formulario.</span>
+            <a href="XHTML+CSS.pdf#page=105" class="page-link">Ver página 101</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>Float</code></span>
+            <span class="desc">Propiedad CSS para posicionamiento flotante de elementos.</span>
+            <a href="XHTML+CSS.pdf#page=15" class="page-link">Ver página 15</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="G">
+        <h2>G</h2>
+        <div class="item">
+            <span class="term"><code>GET</code></span>
+            <span class="desc">Método de envío de formularios a través de la URL.</span>
+            <a href="XHTML+CSS.pdf#page=101" class="page-link">Ver página 101</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="H">
+        <h2>H</h2>
+        <div class="item">
+            <span class="term"><code>&lt;h1&gt; a &lt;h6&gt;</code></span>
+            <span class="desc">Definen títulos de sección en seis niveles de importancia.</span>
+            <a href="XHTML+CSS.pdf#page=23" class="page-link">Ver página 23</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;head&gt;</code></span>
+            <span class="desc">Cabecera que contiene información no visible del documento.</span>
+            <a href="XHTML+CSS.pdf#page=17" class="page-link">Ver página 17</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>height</code></span>
+            <span class="desc">Atributo para indicar la altura de imágenes o controles.</span>
+            <a href="XHTML+CSS.pdf#page=73" class="page-link">Ver página 73</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>href</code></span>
+            <span class="desc">Atributo fundamental del enlace que indica la URL de destino.</span>
+            <a href="XHTML+CSS.pdf#page=55" class="page-link">Ver página 55</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;html&gt;</code></span>
+            <span class="desc">Etiqueta raíz que indica el comienzo y final del documento.</span>
+            <a href="XHTML+CSS.pdf#page=17" class="page-link">Ver página 17</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="I">
+        <h2>I</h2>
+        <div class="item">
+            <span class="term"><code>id</code></span>
+            <span class="desc">Atributo que establece un identificador único para un elemento.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;iframe&gt;</code></span>
+            <span class="desc">Etiqueta utilizada para insertar marcos flotantes.</span>
+            <a href="XHTML+CSS.pdf#page=130" class="page-link">Ver página 130</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;img&gt;</code></span>
+            <span class="desc">Etiqueta vacía empleada para insertar imágenes.</span>
+            <a href="XHTML+CSS.pdf#page=73" class="page-link">Ver página 73</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;input&gt;</code></span>
+            <span class="desc">Etiqueta versátil para diversos controles en formularios.</span>
+            <a href="XHTML+CSS.pdf#page=106" class="page-link">Ver página 102</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;ins&gt;</code></span>
+            <span class="desc">Etiqueta para marcar texto que ha sido insertado o añadido.</span>
+            <a href="XHTML+CSS.pdf#page=29" class="page-link">Ver página 29</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="L">
+        <h2>L</h2>
+        <div class="item">
+            <span class="term"><code>&lt;label&gt;</code></span>
+            <span class="desc">Define el título o leyenda de un campo de formulario.</span>
+            <a href="XHTML+CSS.pdf#page=110" class="page-link">Ver página 110</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>lang</code></span>
+            <span class="desc">Atributo que indica el idioma del contenido de un elemento.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;legend&gt;</code></span>
+            <span class="desc">Define el título de un conjunto de campos agrupados con <code>&lt;fieldset&gt;</code>.</span>
+            <a href="XHTML+CSS.pdf#page=110" class="page-link">Ver página 110</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;li&gt;</code></span>
+            <span class="desc">Etiqueta que define cada uno de los elementos de una lista.</span>
+            <a href="XHTML+CSS.pdf#page=41" class="page-link">Ver página 41</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;link&gt;</code></span>
+            <span class="desc">Enlaza recursos externos como CSS en la cabecera.</span>
+            <a href="XHTML+CSS.pdf#page=63" class="page-link">Ver página 63</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="M">
+        <h2>M</h2>
+        <div class="item">
+            <span class="term"><code>mailto:</code></span>
+            <span class="desc">Prefijo para enlaces que abren el gestor de correo electrónico.</span>
+            <a href="XHTML+CSS.pdf#page=64" class="page-link">Ver página 64</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;map&gt;</code></span>
+            <span class="desc">Define un mapa de imagen del lado del cliente.</span>
+            <a href="XHTML+CSS.pdf#page=18" class="page-link">Ver página 18</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>maxlength</code></span>
+            <span class="desc">Limita el número máximo de caracteres en campos de texto.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;meta&gt;</code></span>
+            <span class="desc">Incluye metadatos relevantes en la cabecera del documento.</span>
+            <a href="XHTML+CSS.pdf#page=123" class="page-link">Ver página 123</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>method</code></span>
+            <span class="desc">Atributo que establece el método HTTP (GET o POST).</span>
+            <a href="XHTML+CSS.pdf#page=91" class="page-link">Ver página 91</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>multiple</code></span>
+            <span class="desc">Permite seleccionar más de un elemento en una lista.</span>
+            <a href="XHTML+CSS.pdf#page=114" class="page-link">Ver página 114</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="N">
+        <h2>N</h2>
+        <div class="item">
+            <span class="term"><code>name</code></span>
+            <span class="desc">Asigna un nombre a controles de formulario o anclas.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="O">
+        <h2>O</h2>
+        <div class="item">
+            <span class="term"><code>&lt;object&gt;</code></span>
+            <span class="desc">Incluye objetos externos y multimedia complejos.</span>
+            <a href="XHTML+CSS.pdf#page=80" class="page-link">Ver página 80</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;ol&gt;</code></span>
+            <span class="desc">Etiqueta para crear listas ordenadas o numeradas.</span>
+            <a href="XHTML+CSS.pdf#page=41" class="page-link">Ver página 41</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;option&gt;</code></span>
+            <span class="desc">Define cada elemento de una lista desplegable.</span>
+            <a href="XHTML+CSS.pdf#page=114" class="page-link">Ver página 114</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;optgroup&gt;</code></span>
+            <span class="desc">Agrupa lógicamente opciones dentro de un <code>&lt;select&gt;</code>.</span>
+            <a href="XHTML+CSS.pdf#page=115" class="page-link">Ver página 115</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="P">
+        <h2>P</h2>
+        <div class="item">
+            <span class="term"><code>&lt;p&gt;</code></span>
+            <span class="desc">Etiqueta de bloque utilizada para definir párrafos de texto.</span>
+            <a href="XHTML+CSS.pdf#page=22" class="page-link">Ver página 22</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;param&gt;</code></span>
+            <span class="desc">Pasa parámetros a un objeto insertado con <code>&lt;object&gt;</code>.</span>
+            <a href="XHTML+CSS.pdf#page=81" class="page-link">Ver página 81</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;pre&gt;</code></span>
+            <span class="desc">Muestra el texto respetando espacios y líneas originales.</span>
+            <a href="XHTML+CSS.pdf#page=40" class="page-link">Ver página 40</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="R">
+        <h2>R</h2>
+        <div class="item">
+            <span class="term"><code>readonly</code></span>
+            <span class="desc">Impide que el usuario modifique el contenido de un control.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>rel</code></span>
+            <span class="desc">Indica la relación entre la página y el recurso enlazado.</span>
+            <a href="XHTML+CSS.pdf#page=60" class="page-link">Ver página 60</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>rows</code></span>
+            <span class="desc">Atributo de <code>&lt;textarea&gt;</code> que indica el número de filas visibles.</span>
+            <a href="XHTML+CSS.pdf#page=112" class="page-link">Ver página 112</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>rowspan</code></span>
+            <span class="desc">Atributo de celda para expandirse verticalmente sobre varias filas.</span>
+            <a href="XHTML+CSS.pdf#page=88" class="page-link">Ver página 88</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="S">
+        <h2>S</h2>
+        <div class="item">
+            <span class="term"><code>&lt;script&gt;</code></span>
+            <span class="desc">Inserta o enlaza bloques de código ejecutable (JavaScript).</span>
+            <a href="XHTML+CSS.pdf#page=127" class="page-link">Ver página 127</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;select&gt;</code></span>
+            <span class="desc">Inserta listas desplegables en formularios.</span>
+            <a href="XHTML+CSS.pdf#page=113" class="page-link">Ver página 113</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>size</code></span>
+            <span class="desc">Define el tamaño inicial de un control o lista.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;span&gt;</code></span>
+            <span class="desc">Etiqueta en línea utilizada para marcado genérico de texto.</span>
+            <a href="XHTML+CSS.pdf#page=35" class="page-link">Ver página 35</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>src</code></span>
+            <span class="desc">Indica la URL del archivo de origen para imágenes o scripts.</span>
+            <a href="XHTML+CSS.pdf#page=73" class="page-link">Ver página 73</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;strong&gt;</code></span>
+            <span class="desc">Realza texto con la máxima importancia (generalmente negrita).</span>
+            <a href="XHTML+CSS.pdf#page=26" class="page-link">Ver página 26</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>style</code></span>
+            <span class="desc">Atributo básico para establecer estilos CSS directamente.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="T">
+        <h2>T</h2>
+        <div class="item">
+            <span class="term"><code>tabindex</code></span>
+            <span class="desc">Establece la posición del elemento en el orden de tabulación.</span>
+            <a href="XHTML+CSS.pdf#page=20" class="page-link">Ver página 20</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;table&gt;</code></span>
+            <span class="desc">Etiqueta principal para definir una tabla de datos.</span>
+            <a href="XHTML+CSS.pdf#page=82" class="page-link">Ver página 82</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;tbody&gt;</code></span>
+            <span class="desc">Agrupa las filas del cuerpo de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=94" class="page-link">Ver página 94</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;td&gt;</code></span>
+            <span class="desc">Define una celda de datos estándar en una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=82" class="page-link">Ver página 82</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;textarea&gt;</code></span>
+            <span class="desc">Incluye áreas de texto de múltiples líneas en formularios.</span>
+            <a href="XHTML+CSS.pdf#page=111" class="page-link">Ver página 111</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;tfoot&gt;</code></span>
+            <span class="desc">Etiqueta que define el pie de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=94" class="page-link">Ver página 94</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;th&gt;</code></span>
+            <span class="desc">Define celdas de cabecera en tablas.</span>
+            <a href="XHTML+CSS.pdf#page=82" class="page-link">Ver página 82</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;thead&gt;</code></span>
+            <span class="desc">Agrupa las filas de la cabecera de una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=94" class="page-link">Ver página 94</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>title</code></span>
+            <span class="desc">Atributo básico para información adicional o título de página.</span>
+            <a href="XHTML+CSS.pdf#page=17" class="page-link">Ver página 17</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>&lt;tr&gt;</code></span>
+            <span class="desc">Etiqueta que define una fila de celdas en una tabla.</span>
+            <a href="XHTML+CSS.pdf#page=82" class="page-link">Ver página 82</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>type</code></span>
+            <span class="desc">Define el tipo de control de entrada o recurso enlazado.</span>
+            <a href="XHTML+CSS.pdf#page=102" class="page-link">Ver página 102</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="U">
+        <h2>U</h2>
+        <div class="item">
+            <span class="term"><code>&lt;ul&gt;</code></span>
+            <span class="desc">Etiqueta para crear listas no ordenadas (con viñetas).</span>
+            <a href="XHTML+CSS.pdf#page=41" class="page-link">Ver página 41</a>
+        </div>
+        <div class="item">
+            <span class="term">URL</span>
+            <span class="desc">Identificador único de recursos en Internet.</span>
+            <a href="XHTML+CSS.pdf#page=48" class="page-link">Ver página 48</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>usemap</code></span>
+            <span class="desc">Atributo para indicar que una imagen usa un mapa definido.</span>
+            <a href="XHTML+CSS.pdf#page=74" class="page-link">Ver página 74</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="V">
+        <h2>V</h2>
+        <div class="item">
+            <span class="term"><code>value</code></span>
+            <span class="desc">Establece el valor inicial o enviado de un control.</span>
+            <a href="XHTML+CSS.pdf#page=103" class="page-link">Ver página 103</a>
+        </div>
+    </section>
+
+    <section class="letter-group" id="X">
+        <h2>X</h2>
+        <div class="item">
+            <span class="term"><code>xml:lang</code></span>
+            <span class="desc">Atributo XHTML obligatorio para indicar el idioma en XML.</span>
+            <a href="XHTML+CSS.pdf#page=19" class="page-link">Ver página 19</a>
+        </div>
+        <div class="item">
+            <span class="term"><code>xmlns</code></span>
+            <span class="desc">Atributo que define el espacio de nombres (namespace) de XHTML.</span>
+            <a href="XHTML+CSS.pdf#page=126" class="page-link">Ver página 126</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

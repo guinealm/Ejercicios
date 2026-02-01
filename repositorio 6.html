@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Repositorio de Elementos XHTML - Capítulo 6</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 40px; background: #fff; color: #333; line-height: 1.5; }
+        .element-card { border: 2px solid #2c3e50; margin-bottom: 40px; page-break-inside: avoid; }
+        .element-header { background: #2c3e50; color: white; padding: 10px 20px; font-size: 1.5em; display: flex; justify-content: space-between; }
+        .section-title { font-weight: bold; background: #ecf0f1; padding: 8px 20px; border-bottom: 1px solid #ccc; color: #2c3e50; text-transform: uppercase; font-size: 0.9em; }
+        .content-block { padding: 15px 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        th { background: #f9f9f9; width: 30%; font-weight: bold; }
+        .tag-name { font-family: 'Courier New', monospace; font-weight: bold; color: #e67e22; }
+        .attr-name { font-family: 'Courier New', monospace; font-weight: bold; color: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; border-bottom: 4px solid #2c3e50; padding-bottom: 10px;">Repositorio de Elementos XHTML</h1>
+
+    <div class="element-card">
+        <div class="element-header">
+            <span>&lt;img&gt;</span>
+            <span>Imagen</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para incluir imágenes en los documentos[cite: 243].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>En línea y etiqueta vacía [cite: 243]</td></tr>
+                <tr><th>Atributos comunes</th><td>Básicos, i18n y eventos [cite: 243]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">src = "url"</td><td>Indica la URL de la imagen que se muestra (Requerido)[cite: 243, 244].</td></tr>
+                <tr><td class="attr-name">alt = "texto"</td><td>Descripción corta de la imagen (Requerido). Máximo 1024 caracteres[cite: 243, 246].</td></tr>
+                <tr><td class="attr-name">longdesc = "url"</td><td>Indica una URL con una descripción más detallada de la imagen[cite: 243].</td></tr>
+                <tr><td class="attr-name">name = "texto"</td><td>Nombre del elemento imagen[cite: 243].</td></tr>
+                <tr><td class="attr-name">height</td><td>Indica la altura con la que se debe mostrar la imagen (píxeles o %)[cite: 243, 281].</td></tr>
+                <tr><td class="attr-name">width</td><td>Indica la anchura con la que se debe mostrar la imagen (píxeles o %)[cite: 243, 281].</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="element-card">
+        <div class="element-header">
+            <span>&lt;map&gt;</span>
+            <span>Mapa de imagen</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para definir mapas de imagen del lado del cliente[cite: 325].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>Bloque y en línea [cite: 325]</td></tr>
+                <tr><th>Atributos comunes</th><td>Básicos, i18n y eventos [cite: 325]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">name = "texto"</td><td>Nombre que identifica de forma única al mapa definido (Obligatorio)[cite: 325].</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="element-card">
+        <div class="element-header">
+            <span>&lt;area&gt;</span>
+            <span>Área de un mapa de imagen</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para definir las distintas áreas que forman un mapa de imagen[cite: 325].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>Etiqueta vacía [cite: 325]</td></tr>
+                <tr><th>Atributos comunes</th><td>Básicos, i18n, eventos y foco [cite: 325]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">href = "url"</td><td>URL a la que se accede al pinchar sobre el área[cite: 325].</td></tr>
+                <tr><td class="attr-name">nohref</td><td>Se emplea para las áreas que no son seleccionables[cite: 325].</td></tr>
+                <tr><td class="attr-name">shape</td><td>Tipo de área: <code>default</code>, <code>rect</code>, <code>circle</code> o <code>poly</code>[cite: 325].</td></tr>
+                <tr><td class="attr-name">coords</td><td>Coordenadas del área. Formato depende de <code>shape</code> (X1,Y1,X2,Y2 para rect; X,Y,R para circle)[cite: 325].</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="element-card">
+        <div class="element-header">
+            <span>&lt;object&gt;</span>
+            <span>Objeto</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para embeber objetos complejos (Java, vídeos, Flash) en los documentos[cite: 351, 356].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>Bloque y en línea [cite: 356]</td></tr>
+                <tr><th>Atributos comunes</th><td>Básicos, i18n y eventos [cite: 356]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">data = "url"</td><td>Indica la URL de los datos o recurso que utiliza el objeto[cite: 356].</td></tr>
+                <tr><td class="attr-name">type</td><td>Indica el tipo de contenido de los datos (MIME type)[cite: 356, 358].</td></tr>
+                <tr><td class="attr-name">height / width</td><td>Indica las dimensiones con las que se debe mostrar el objeto[cite: 356].</td></tr>
+                <tr><td class="attr-name">classid, codebase, codetype</td><td>Información específica que depende del tipo de objeto[cite: 356].</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="element-card">
+        <div class="element-header">
+            <span>&lt;param&gt;</span>
+            <span>Parámetros de un objeto</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para indicar el valor de los parámetros necesarios para un objeto[cite: 378].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>Etiqueta vacía [cite: 378]</td></tr>
+                <tr><th>Atributos comunes</th><td>id [cite: 378]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">name = "texto"</td><td>Indica el nombre del parámetro[cite: 378].</td></tr>
+                <tr><td class="attr-name">value = "texto"</td><td>Indica el valor del parámetro[cite: 378].</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="element-card">
+        <div class="element-header" style="background: #7f8c8d;">
+            <span>&lt;embed&gt;</span>
+            <span>Embeber objetos (No estándar)</span>
+        </div>
+        <div class="section-title">Descripción General</div>
+        <div class="content-block">
+            <p>Se emplea para embeber objetos. No es parte del estándar oficial XHTML, pero es útil para compatibilidad con vídeos Flash[cite: 391, 393].</p>
+            <table>
+                <tr><th>Tipo de elemento</th><td>Bloque [cite: 393]</td></tr>
+                <tr><th>Atributos comunes</th><td>Básicos, i18n y eventos [cite: 393]</td></tr>
+            </table>
+        </div>
+        <div class="section-title">Atributos Específicos</div>
+        <div class="content-block">
+            <table>
+                <tr><td class="attr-name">src = "url"</td><td>Indica la URL del archivo u objeto que se incluye[cite: 393].</td></tr>
+                <tr><td class="attr-name">type</td><td>Indica el tipo de contenido (flash, quicktime, java, etc.)[cite: 393].</td></tr>
+                <tr><td class="attr-name">height / width</td><td>Dimensiones del objeto[cite: 393].</td></tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
